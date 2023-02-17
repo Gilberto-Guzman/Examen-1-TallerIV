@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Principal</title>
+
+    {% include 'libraries/lib-css.html' %}
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-primary">
+            <a class="navbar-brand text-light" href="#">
+                <img src="{{ url_for('static', filename='assets/images/logo.png') }}" width="50" height="50">
+
+                Universidad Autonoma De Chiapas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row ">
+            <div class="col order-first">
+                <img class="bi mb-2" src="{{ url_for('static', filename='assets/images/estudiante.svg') }}" width="450"
+                    height="450">
+            </div>
+            <div class="col">
+                <h1>Acceso</h1><br>
+                <div class="col mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo UNACH</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-warning text-light">Ingresar</button>
+            </div>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-footer text-muted">
+            Copyright 2023 <a href="https://github.com/Gilberto-Guzman">Gilberto-Guzman</a>
+        </div>
+    </div>
+
+    {% include 'libraries/lib-js.html' %}
+</body>
+
+</html>
