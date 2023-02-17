@@ -12,20 +12,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid bg-primary">
-            <a class="navbar-brand text-light" href="#">
-                <img src="{{ url_for('static', filename='assets/images/logo.png') }}" width="50" height="50">
 
-                Universidad Autonoma De Chiapas
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='assets/images/logo.png') }}" width="80" height="80" class="d-inline-block align-top" style="margin-left: 10px;" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#"><h3>Universidad Autonoma De Chiapas</h3></a>
+            </li>
         </div>
-    </nav>
+      </nav>
 
     <div class="container mt-5 mb-5">
         <div class="row ">
@@ -43,7 +39,7 @@
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-warning text-light">Ingresar</button>
+                <button type="submit" class="btn btn-warning text-light w-100">Ingresar</button>
             </div>
         </div>
     </div>
