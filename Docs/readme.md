@@ -17,3 +17,5 @@
 ##### 3.-
 
 ![3](captures/3.jpeg)
+
+### Nota: Para acceder a la pagina web digite la siguiente dirección: http://127.0.0.1:8000/views/home
